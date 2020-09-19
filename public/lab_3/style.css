@@ -20,12 +20,13 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Concert One', cursive;
   color: #2a2a2a;
+  font-weight: bolder;
 }
 
 p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Kufam', sans-serif;
   color: #2a2a2a;
 }
 
