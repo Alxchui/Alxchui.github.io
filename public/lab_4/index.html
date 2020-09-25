@@ -1,1 +1,61 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Alexander Chui Lab 4
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Alexander Chui Lab 4</h1>
+        <div class ="container"></div>
+        <div class ="wrapper"></div>
+        <div class ="flex-outer">
+        <form action="/api" method="POST">
+            <ul class = flex-outer>
+             <li>
+               <label for="firstName">First Name:</label>
+               <input type="text" id="firstName" name="fname" maxlength="140">
+             </li>
+             <li>
+                <label for="lasttName">Last Name:</label>
+                <input type="text" id="lasttName" name="lname" maxlength="140">
+              </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" id="pnum" name="user_number">
+              </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message" rows="5" cols="33"></textarea>
+             </li>
+             <li>
+                <label for="Age">Age:</label>
+                <ul class ="flex-inner">
+                    <li>
+                        <label for="18-35">18-35</label>
+                        <input type="checkbox" id="18-35" name="18-35" value="18-35" >
+                    </li>
+                    <li>
+                        <label for="35-50">35-50</label>
+                        <input type="checkbox" id="35-50" name="35-50" value="35-50" >
+                    </li>
+                    <li>
+                        <label for="50-65">50-65</label>
+                        <input type="checkbox" id="50-65" name="50-65" value="50-65" >
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="submit" value="submit" >
+            </li>
+            </ul>
+           </form>
+        </div>
+    </body>
+</html>
 hello world

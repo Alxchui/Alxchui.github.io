@@ -60,7 +60,7 @@ html, body {
   }
   
   body > * {
-    background-color: red;
+    background-color: rgb(0, 200, 214);
     padding: 1%;
   }
   
@@ -135,7 +135,17 @@ html, body {
     width: 100%;
     height: auto;
   }
+  textarea {
   
+    vertical-align: top;
+  
+    
+    height: 5em;
+  }
+  button {
+    
+    margin-left: .5em;
+  }
   .footer {
     margin-top: 10px;
     background: rgba(0,255,0,0.5);
