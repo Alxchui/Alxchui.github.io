@@ -17,7 +17,8 @@ app.route('/api')
   .post((req, res) => {
     console.log('POST request detected');
   });
-
+res.send("Hello World")
+//res.send(Buffer.from('whoop'))
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
