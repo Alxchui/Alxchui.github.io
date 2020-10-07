@@ -14,19 +14,18 @@ body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #6091DC;
+  background-color: #6091C3;
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Concert One', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   color: #2a2a2a;
-  font-weight: bolder;
 }
 
 p, input, li {
-  font-family: 'Kufam', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #2a2a2a;
 }
 
