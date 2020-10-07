@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    background-color: rgb(252, 164, 247);
+    width: 70%;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    background-color: rgba(18, 111, 187, 0.5);
+    font-family: 'Comfortaa', cursive;
+    color: rgb(255, 209, 166);
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    text-align: left;
+    vertical-align: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .header img{
+    display: inline;
+    align-items: right;
+    max-width: 100px;
+  }
+  
+  .wrapper {
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  rgb(0, 65, 102);
+    justify-content: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    
+  }
+  h2{
+    font-family: 'Comfortaa', cursive;
+    color:  rgb(22, 5, 21);
+  }
+
+  .wrapper .us{
+    display: block;
+    max-width:320px;
+    max-width: 33%;
+}
+.wrapper p{
+  background-color: rgb(255, 254, 221);
+}
+.wrapper img{
+  
+  max-width: 100%;
+  
+  border-radius: 4px;
+  border: 1px solid white;
+}
+.wrapper .roles{
+  background-color: rgb(255, 254, 221);
+  display: block;
+  max-width: 960px;
+  max-width: 66%;
+}
+@media only screen and (max-width: 1000px) {
+  .wrapper .us{
+    margin-bottom: 15px;
+    text-align:center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  }
