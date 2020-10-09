@@ -32,7 +32,7 @@
                     <textarea id="msg" name="message" rows="5" cols="33"></textarea>
                 </li>
                 <li>
-                    <p>Age:</p>
+                    <p><div class ="check-list-label">Age:</div></p>
                     <ul class ="flex-inner">
                         <li>
                             <label for="18-35">18-35</label>
@@ -54,36 +54,33 @@
                     </button>     
                     <button type = "button" name ="activate" id= "activate">
                         Activate   
-                    </button>           
+                    </button>     
+                         
                 </li>
             </ul>
            </form>
         </div>
         <script> 
+        
         function testFunction() {
-            guessSubmit.addEventListener('click', checkGuess);
             let title = document.querySelector('.title');
             let h1 = document.querySelector('.h1');
+            let body =document.querySelector('.body');
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
                  console.log(response);
             })
-       }
-       const btn = document.querySelector('button');
-const txt = document.querySelector('p');
-
-btn.addEventListener('click', updateBtn);
-
-function updateBtn() {
-  if (btn.textContent === 'Start machine') {
-    btn.textContent = 'Stop machine';
-    txt.textContent = 'The machine has started!';
-  } else {
-    btn.textContent = 'Start machine';
-    txt.textContent = 'The machine is stopped.';
-  }
-}
+            title = "Lab 5 for Alexander Chui";
+            body.style.backgroundColor = rgba(250, 187, 216, 0.67);
+            let checklistLabel =document.querySelector('.flex-outer li p');
+            checklistLabel="Fruit";
+            let checkboxLabel =document.querySelectorALL('.flex-inner label');
+            checkboxLabel = ["Mango","Pineapple","Durian"];
+            let content = document.querySelector(".flex-outer");
+            //content.style.margin = 0 auto;
+        }
+        activate.addEventListener('click', testFunction);
 </script>
     </body>
 </html>

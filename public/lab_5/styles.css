@@ -127,6 +127,7 @@ body {
    text-transform:uppercase;
    letter-spacing:1.2px;
    border-radius: 3px;
+   margin-right: 10px;
  }
  .flex-inner{
    max-width: 800;
@@ -143,10 +144,8 @@ body {
    flex-wrap: wrap;
    align-items: center;
    padding: 0px 16px;
+   max-width: 95px;
  }
  .flex-outer > li > label + * {
    flex:1 0 225px;
  }
-.checkbox{
-    max-width: 95px;
-}
