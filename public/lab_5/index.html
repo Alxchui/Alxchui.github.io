@@ -52,20 +52,38 @@
                     <button type="submit" name="submit" id ="submit">
                         Submit
                     </button>     
-                    <button type = "activate" name ="activate" id= "activate">
-                        Activate
-                        
+                    <button type = "button" name ="activate" id= "activate">
+                        Activate   
                     </button>           
                 </li>
             </ul>
            </form>
         </div>
+        <script> 
         function testFunction() {
+            guessSubmit.addEventListener('click', checkGuess);
+            let title = document.querySelector('.title');
+            let h1 = document.querySelector('.h1');
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
                  console.log(response);
             })
        }
+       const btn = document.querySelector('button');
+const txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+  if (btn.textContent === 'Start machine') {
+    btn.textContent = 'Stop machine';
+    txt.textContent = 'The machine has started!';
+  } else {
+    btn.textContent = 'Start machine';
+    txt.textContent = 'The machine is stopped.';
+  }
+}
+</script>
     </body>
 </html>
