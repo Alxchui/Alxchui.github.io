@@ -32,7 +32,7 @@
                     <textarea id="msg" name="message" rows="5" cols="33"></textarea>
                 </li>
                 <li>
-                    <p><div class ="check-list-label">Age:</div></p>
+                    <p><div class ="checkbox-list-label">Age:</div></p>
                     <ul class ="flex-inner">
                         <li>
                             <label for="18-35">18-35</label>
@@ -63,20 +63,27 @@
         <script> 
         
         function testFunction() {
-            let title = document.querySelector('.title');
-            let h1 = document.querySelector('.h1');
+            let title = document.querySelector('title');
+            let h1 = document.querySelector('h1');
             let body =document.querySelector('.body');
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
                  console.log(response);
             })
-            title = "Lab 5 for Alexander Chui";
-            body.style.backgroundColor = rgba(250, 187, 216, 0.67);
-            let checklistLabel =document.querySelector('.flex-outer li p');
-            checklistLabel="Fruit";
-            let checkboxLabel =document.querySelectorALL('.flex-inner label');
+            title.innerText = "Lab 5 for Alexander Chui";
+            h1.innerText = "Lab 5 for Alexander Chui";
+            document.body.style.backgroundColor = 'red';
+            let checklistLabel =document.querySelector('checkbox-list-label');
+            checklistLabel='Fruit';
+            let checkboxLabel =document.querySelectorAll('.flex-inner li label');
             checkboxLabel = ["Mango","Pineapple","Durian"];
+            const fruitArray =["Mango","Pineapple","Durian"];
+            checkboxLabel.forEach((label,i) => {
+                const text = label.innerText
+                console.log(text);
+                label.innerText = fruitArray[i];
+            })
             let content = document.querySelector(".flex-outer");
             //content.style.margin = 0 auto;
         }
