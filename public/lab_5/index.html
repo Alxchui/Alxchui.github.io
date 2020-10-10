@@ -75,9 +75,8 @@
             h1.innerText = "Lab 5 for Alexander Chui";
             document.body.style.backgroundColor = 'red';
             let checklistLabel =document.querySelector('checkbox-list-label');
-            checklistLabel='Fruit';
+            checklistLabel.innerText="Fruit";
             let checkboxLabel =document.querySelectorAll('.flex-inner li label');
-            checkboxLabel = ["Mango","Pineapple","Durian"];
             const fruitArray =["Mango","Pineapple","Durian"];
             checkboxLabel.forEach((label,i) => {
                 const text = label.innerText
@@ -85,7 +84,7 @@
                 label.innerText = fruitArray[i];
             })
             let content = document.querySelector(".flex-outer");
-            //content.style.margin = 0 auto;
+            //document.content.style.margin = 0 auto;
         }
         activate.addEventListener('click', testFunction);
 </script>
