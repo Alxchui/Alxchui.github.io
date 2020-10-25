@@ -35,10 +35,10 @@ document.body.addEventListener('submit', async (e) => {
       }
       const unfilledArray = range(10);
       const filledArray = unfilledArray.map(()=> {
-        const ranNum=Math.floor(Math.random() * 243);
+        const ranNum = Math.floor(Math.random() * 243);
         return fromServer[ranNum];
       });
-      const reversedArray=filledArray.sort((a, b) => sortFunction(a, b, key));
+      const reversedArray = filledArray.sort((a, b) => sortFunction(a, b, key));
       const ul = document.createElement('ul');
       ul.className = 'flex-inner';
       $('form').prepend(ul);
