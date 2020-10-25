@@ -4,7 +4,7 @@
 
 import express from 'express';
 import dotenv from 'dotenv';
-import countries from './public/lab_6/countries.js
+import countries from './public/lab_6/countries.js';
 dotenv.config();
 
 const app = express();
