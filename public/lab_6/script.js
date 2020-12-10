@@ -45,8 +45,8 @@ document.body.addEventListener('submit', async (e) => {
 
       reversedArray.forEach((element, i) => {
         const li = document.createElement('li');
-        $(li).append('<input type = "checkbox" value = ${element.code} id = ${element.code} />');
-        $(li).append('<label form$(element.code)>${el.key}</label>');
+        $(li).append(`<input type = "checkbox" value = ${element.code} id = ${element.code} />`);
+        $(li).append(`<label for=$(element.code)>${element.key}</label>`);
         $(ul).append(li);
       });
       console.log('fromServer', fromServer);
